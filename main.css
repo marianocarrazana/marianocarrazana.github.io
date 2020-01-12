@@ -55,3 +55,26 @@ h4{
 .resume a{
   color:white;
 }
+
+#lightgallery>a{
+  width:256px;
+  height:256px;
+  overflow:hidden;
+  display:block;
+  margin:10px;
+}
+
+#lightgallery img{
+  max-width:100%;
+}
+
+#lightgallery{
+  margin:10px;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+h1{
+  color:white;
+  text-align:center;
+}
