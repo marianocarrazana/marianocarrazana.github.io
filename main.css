@@ -1,6 +1,10 @@
 body{
   font-family: 'Source Code Pro', monospace;
-  background:#2D2D2D
+  font-size: 1.1rem;
+  background:#2D2D2D;
+  max-width: 1280px;
+  width: 90%;
+  margin: 1em auto;
 }
 .row,.column{
   display:flex;
@@ -77,4 +81,23 @@ h4{
 h1{
   color:white;
   text-align:center;
+}
+
+#container{
+  justify-content: space-around;
+}
+
+@media (max-width:768px) {
+  #container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .header{
+    order:1;
+    margin:.1em auto;
+    padding: 1em 0!important;
+    text-align: center;
+  }
+  .resume{order:2}
+  .side{width: auto;margin-top:1em;}
 }
